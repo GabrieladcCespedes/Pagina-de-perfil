@@ -1,0 +1,132 @@
+/*Gabriela Céspedes*/
+/*Coloca los bloques block-1 y block-2 en el centro de la pagina*/
+#conteiner{
+    display: flex;
+    justify-content: center;
+}
+/*se ubican el contenido del bloque nav*/
+.nav, .nav-links, .btn, .active{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white; 
+    text-decoration: none; 
+    margin: 20px;
+}
+/*color de fondo del bloque nav*/
+.nav{
+    background-color: darkslategrey;
+}
+/*Se quita los puntitos de la la lista*/
+ul{
+    list-style: none;
+}
+/*Se cambia el diseño predeterminado del boton*/
+.btn{
+    background-color: skyblue;
+    box-shadow: 3px 3px gray;/*sombra en el boton: formato(x, y, color)*/
+}
+/*Se cambia el tamaño de la imagen user y se ubica en la pagina*/
+#user{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 60px;
+    padding: 10px;
+}
+/*Se cambia el tamaño de la imagen map*/
+.map{
+    height: 20px;
+    width: 15px;
+}
+/*se cambia el tamaño de la imagen gear*/
+.gear{
+    height: 20px;
+    width: 20px;
+}
+/*se crea un borde visible gris paras los bloques block-a, block-b, block-c y block-d*/
+.block-a, .block-b, .block-c, .block-d{
+    margin: 10px;
+    border: 2px solid gray;/*Pone un marco a la caja*/
+}
+/*block-b contiene a barra-b y data-b:
+se pone un tamaño predeterminado
+*/
+.block-b{
+    width: 320px;
+}
+/*barra-a es la barra azul de la tarjeta de presentacion:
+se define el tamaño y color
+*/
+.barra-a{
+    height: 100px;
+    width: 500px;
+    background-color: skyblue;
+    padding: 10px;
+}
+/*data-a contiene un div con datos del usurio que se
+le ubica al final del bloque data-a y en forma de columna
+*/
+.data-a{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;;
+    width: 500px;
+    height: 220px;
+    background-color: white;
+    padding: 10px;
+}
+/*se cambia las decoraciones predeterminadas de un link*/
+a{
+    text-decoration: none;
+    color: black;
+}
+/*Se cambia el diseño del boton editar perfil */
+button{
+    background-color: white;
+    color: blue;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;/*Cambia la apariencia del curso cuando se posa encima del boton*/
+}
+/*Se modifica el tamaño y color de los bloques y 
+se cambia el color y tamaño de la fuenta*/
+.barra-b, .barra-c, .barra-d{
+    height: 30px;
+    width: 300px;
+    background-color: darkslategrey;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    
+}
+/*data-b contiene cinformacion en p*/
+.data-b{
+    background-color: white;
+    padding: 10px;
+}
+/*Disminuye el tamaño de las fotos de perfil*/
+.user-mini{
+    width: 50px;
+    height: 50px;
+}
+/*Disminuye el tamaño de las imagenes accept y close*/
+.close, .accept{
+    width: 30px;
+    height: 30px;
+}
+/**/
+.profile{
+    display: flex;
+    justify-content: space-around;
+    margin: 5px;
+}
+/**/
+.link-d{
+    border-top: 2px solid gray;/*Pone un marco en la parte de arriba de la caja*/
+}
+/*Ubica al block-1 al lado del block-2*/
+#block-1, #block-2{
+    display: inline-block;
+    vertical-align: top;
+}
